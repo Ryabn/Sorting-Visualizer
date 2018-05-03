@@ -13,7 +13,7 @@ public class SortingAlgorithms {
     }
 
     /**
-     * Generates and returns an integer array of length made of random integeres between 0 and n
+     * Generates and returns an integer array of length made of random integers between 0 and n
      * @param length
      * @param n
      * @return
@@ -50,6 +50,13 @@ public class SortingAlgorithms {
         arr[j] = temp;
     }
 
+    public static void mergeSort(int[] arr){
+
+    }
+    public static void mergeSortHelper(int[] arr){
+
+    }
+
     public static void selectionSort(int[] arr){
         for(int i = 0; i < arr.length - 1; i++){
             int min = i;
@@ -63,18 +70,29 @@ public class SortingAlgorithms {
         }
     }
 
-    public static void selectionSortWithSteps(int[] arr){
-        steps.clear();
-        for(int i = 0; i < arr.length - 1; i++){
-            int min = i;
-            for(int j = i; j < arr.length; j++){
-                if(arr[j] < arr[min]){
-                    min = j;
-                }
-            }
-            //found smallest index
-            swap(arr, i, min);
+    public static int[] selectionSortWithSteps(int[] arr){
+        //i (which location is it replacing at )
+        //j (compare for min value)
+        //min (highlight which is current min)
 
-        }
+        //i means we only look at i and on
+        //- 3 i       -2 j    -1 min
+
+        return arr;
+    }
+    public void recurSelectionSort(int a[], int n, int index){
+        // Return when starting and size are same
+//        if (index == n)
+//            return;
+//
+//        // calling minimum index function for minimum index
+//        //int k = min(a, index, n-1);
+//
+//        // Swapping when index nd minimum index are not same
+//        if (k != index)
+//            swap(a[k], a[index]);
+//
+//        // Recursively calling selection sort function
+//        recurSelectionSort(a, n, index + 1);
     }
 }
